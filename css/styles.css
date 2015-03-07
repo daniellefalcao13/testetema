@@ -1,0 +1,121 @@
+html, body {
+  background-color : black;
+}
+
+.editing {
+  background-color: #222;
+}
+
+.toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 110px;
+}
+
+.editing .toolbar {
+  display: none;
+}
+
+.prompter {
+  color: white;
+  font-size: 100px;
+  font-family: Helvetica;
+  margin-top: -.25em;
+  padding: 2.25em 50px 0 110px;
+  margin-bottom: 12em;
+  -moz-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.prompter.mirror {
+  padding-left: 110px;
+  padding-right: 50px;
+}
+
+.mirror {
+  display :block;
+  -moz-transform: scale(-1, 1) translateZ(0);
+  -webkit-transform: scale(-1, 1) translateZ(0);
+  -o-transform: scale(-1, 1) translateZ(0);
+  -ms-transform: scale(-1, 1) translateZ(0);
+  transform: scale(-1, 1) translateZ(0); 
+}
+
+.editing .prompter {
+  padding: 10px;
+}
+
+.arrow {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 2.4em;
+  cursor: pointer;
+}
+
+.speed, .flip, .edit {
+  box-sizing: border-box;
+  padding-top: 10px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  font-family: Helvetica;
+  font-weight: bold;
+  opacity: .5;
+}
+
+.edit {
+  top: 0;
+  right: 0;
+  background-color: white;
+  color: black;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 100px;
+  position: fixed;
+  display : block;
+  cursor: pointer;
+}
+
+.playing .edit {
+  display: none;
+}
+
+.edit.mirror {
+  right: inherit;
+  left: 0;
+}
+
+.flip {
+  top: 0;
+  left: 0;
+  background-color: #333333;
+  cursor: pointer;
+}
+
+.flip:hover {
+  opacity: 1;
+}
+
+.speed {
+  bottom: 0;
+  left: 0;
+  background-color: red;
+}
+
+.toolbar.mirror {
+  right: 0;
+  left: inherit;
+}
+
+.running {
+  background-color: green;
+}
